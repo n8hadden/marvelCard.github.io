@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.theFather {
+    height: 100vh;
+    width: 100vw;
+    background-color: lightgray;
+}
+
+.marbleContainer {
+    height: 60vh;
+    width: 40vw;
+    background-image: linear-gradient(to right, rgb(235, 62, 90), rgb(77, 0, 77));
+    border-radius: 15px;
+    position: relative;
+    top: 20vh;
+    left: 30vw;
+    padding: 5vh;
+}
+
+.divContent {
+    color: white;
+    position: absolute;
+    opacity: 0;
+    width: 25vw;
+    transition: 1s;
+}
+
+.marbleContainer:hover  img {
+    transform: translateX(25vw);
+}
+
+.marbleContainer:hover  .divContent {
+    opacity: 1;
+    transform: translate(2vw);
+    font-size: 1.3vw;
+}
+
+img {
+    position: absolute;
+    left: 5vw;
+    bottom: .2vh;
+    transition: 1s;
+}
